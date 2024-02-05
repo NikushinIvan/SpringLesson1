@@ -40,6 +40,7 @@ public class Student {
         }
         if (sum/grades.size() >= 3) {
             setEnrolled(true);
+            System.out.println("Student" + name + "enrolled");
         }
     }
 
