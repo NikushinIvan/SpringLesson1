@@ -14,7 +14,7 @@ import static school.enums.Grade.*;
 import static school.enums.Subject.*;
 
 @Configuration
-@ComponentScan("school.teacher")
+@ComponentScan({"school.teacher", "application.config"})
 public class ContextConfig {
 
     @Bean

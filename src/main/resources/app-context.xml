@@ -42,4 +42,6 @@
 
     <context:component-scan base-package="school.teacher" />
 
+    <bean class="application.config.JilHelperPostProcessor"/>
+
 </beans>
