@@ -13,7 +13,7 @@ public enum Grade {
         this.grade = grade;
     }
 
-    public int getGrade() {
+    public int getGradeValue() {
         return grade;
     }
 

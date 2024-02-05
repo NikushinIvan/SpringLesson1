@@ -3,6 +3,7 @@ package school.student;
 import school.enums.Grade;
 import school.enums.Subject;
 
+import java.beans.BeanProperty;
 import java.util.Map;
 
 public class Student {
@@ -29,6 +30,16 @@ public class Student {
 
     public void setEnrolled(boolean enrolled) {
         isEnrolled = enrolled;
+    }
+
+    public void init() {
+        int sum = 0;
+        for (Grade grade: grades.values()) {
+            sum += grade.getGradeValue();
+        }
+        if (sum/grades.size() >= 3) {
+            setEnrolled(true);
+        }
     }
 
     @Override
