@@ -3,7 +3,7 @@ package school.student;
 import school.enums.Grade;
 import school.enums.Subject;
 
-import java.beans.BeanProperty;
+import javax.annotation.PostConstruct;
 import java.util.Map;
 
 public class Student {
@@ -32,6 +32,7 @@ public class Student {
         isEnrolled = enrolled;
     }
 
+    @PostConstruct
     public void init() {
         int sum = 0;
         for (Grade grade: grades.values()) {
